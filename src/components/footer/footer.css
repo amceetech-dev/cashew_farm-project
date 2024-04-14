@@ -1,0 +1,50 @@
+.footer {
+  background-color: #197755;
+  padding: 20px 0;
+  text-align: center;
+  color: #333;
+}
+
+/* Style the container for the footer sections */
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Style each footer section */
+.footer-section {
+  flex: 1 1 300px;
+  margin: 10px 10px;
+}
+
+/* Style the social media links */
+.social-media-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-media-links li {
+  display: inline;
+  margin-right: 10px;
+}
+.social-media-links li i {
+  font-size: 30px;
+  color: #f6f6f6;
+}
+
+.social-media-links li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.social-media-links li i:hover {
+  color: rgb(168, 202, 44);
+}
+
+/* Style the copyright notice */
+.copyright {
+  margin-top: 20px;
+}
