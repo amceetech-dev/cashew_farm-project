@@ -31,12 +31,12 @@
 }
 
 .contact-col ul i {
-  color: #197755;
+  color: rgb(252, 188, 77);
   font-size: 30px;
   margin-right: 10px;
 }
 .dark-btn {
-  background: #197754;
+  background: rgb(205, 122, 5);
   color: #f5f5f5;
   font-size: 16px;
   padding: 14px 25px;
@@ -49,7 +49,7 @@
   justify-content: center;
 }
 .dark-btn:hover {
-  background-color: rgb(168, 202, 44);
+  background-color: rgb(244, 160, 42);
 }
 .dark-btn i {
   width: 40px;
@@ -59,7 +59,6 @@
 .contact-col form textarea {
   display: flex;
   width: 100%;
-  background: #ebecfe;
   padding: 15px;
   border: 0;
   outline: 0;

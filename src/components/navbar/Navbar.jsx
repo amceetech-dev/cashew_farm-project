@@ -1,34 +1,44 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-scroll';
-import "./navbar.css"
-import logo from '../../assets/logo.png'
-
-
+import './navbar.css';
+import logo from '../../assets/logo.png';
 
 function Navbar() {
-    const [clicked, setClicked] = useState(false)
+    const [clicked, setClicked] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const navbarRef = useRef(null);
+    const mobileIconRef = useRef(null);
+
     const handleClick = () => {
-        setClicked(!clicked)
-    }
+        setClicked(!clicked);
+    };
+
+    const handleClickOutside = (event) => {
+        if (navbarRef.current && !navbarRef.current.contains(event.target) &&
+            mobileIconRef.current && !mobileIconRef.current.contains(event.target)) {
+            setClicked(false);
+        }
+    };
+
     useEffect(() => {
         window.addEventListener('scroll', () => {
-            window.scrollY > 50 ? setScrolled(true) : setScrolled(false)
-        })
-    }, [])
+            setScrolled(window.scrollY > 50);
+        });
+
+        document.addEventListener('mousedown', handleClickOutside);
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
     return (
         <nav className={scrolled ? "container dark-nav" : "container"}>
-            <Link
-                className='link'
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-            ><img src={logo} alt='' className='logo' /></Link>
+            <Link className='link' to='home' spy={true} smooth={true} offset={50} duration={500}>
+                <img src={logo} alt='' className='logo' />
+            </Link>
 
-            <ul className={clicked ? "navbar active" : "navbar"}>
-
+            <ul ref={navbarRef} className={clicked ? "navbar active" : "navbar"}>
                 <li className='underline'>
                     <Link to="home"
                         className='link'
@@ -81,7 +91,7 @@ function Navbar() {
                         smooth={true}
                         offset={-200}
                         duration={500}
-                    >Gallery</Link>
+                    >Projects</Link>
                 </li>
 
                 <li>
@@ -94,16 +104,13 @@ function Navbar() {
                         duration={500}
                     ><button className='btn'>Contact</button></Link>
                 </li>
-
             </ul>
+
             <div className='mobile'>
-
-                <i id='bar' onClick={handleClick} className={clicked ? "fa-solid fa-times" : "fa-solid fa-bars"}></i>
-
+                <i id='bar' ref={mobileIconRef} onClick={handleClick} className={clicked ? "fa-solid fa-times" : "fa-solid fa-bars"}></i>
             </div>
-
-        </nav >
-    )
+        </nav>
+    );
 }
 
-export default Navbar
+export default Navbar;

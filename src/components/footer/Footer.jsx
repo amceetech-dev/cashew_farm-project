@@ -2,6 +2,8 @@ import React from 'react'
 import "./footer.css"
 import { Link } from 'react-scroll';
 
+
+
 const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
@@ -9,26 +11,27 @@ const Footer = () => {
             <div className="footer-container">
                 <div className="footer-section">
                     <h3>About Us</h3>
-                    <p>Manglore Farm Ltd is dedicated to sustainable cashew farming practices, ensuring high-quality products while preserving the environment.</p>
+                    <p>Our expertise includes seamless integration of web platforms and Smart appliances
+                        for customer accessibility, convenience, control and energy conservation.</p>
                 </div>
                 <div className="footer-section">
                     <h3>Contact Us</h3>
-                    <p>Email: post@manglorefarm.com</p>
-                    <p>Phone: +234 906 637 5150</p>
-                    <p>Address: 4a, Hillview Avenue, Independence Layout Enugu, Nigeria</p>
+                    <p>Email: info.omnitechsolutionz@gmail.com</p>
+                    <p>Phone: +234 814 748 1230</p>
+                    <p>Address: 5 Chukwuemeka Street, Lomalinda Extension, Maryland, Enugu State, Nigeria</p>
                 </div>
                 <div className="footer-section">
                     <h3>Follow Us</h3>
                     <p>Stay connected with us on social media:</p>
                     <ul className="social-media-links">
-                        <Link to=''><li><i class="fa-brands fa-square-twitter"></i></li></Link>
-                        <Link to=''><li><i class="fa-brands fa-square-instagram"></i></li></Link>
-                        <Link to=''><li><i class="fa-brands fa-square-facebook"></i></li></Link>
+                        <a href='https://twitter.com/Omnitechsolz' target="_blank"><li><i className="fa-brands fa-square-twitter"></i></li></a>
+                        <a href='/'><li><i className="fa-brands fa-linkedin"></i></li></a>
+                        <a href='https://github.com/Omnitechsolz' target="_blank"><li><i className="fa-brands fa-square-github"></i></li></a>
                     </ul>
                 </div>
             </div>
             <div className="copyright">
-                <p>© {currentYear} Manglore Farm Ltd. All rights reserved.</p>
+                <p>© {currentYear} OmniTech Solutions. All rights reserved.</p>
             </div>
         </div>
     )

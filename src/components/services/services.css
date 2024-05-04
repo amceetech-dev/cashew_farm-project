@@ -15,21 +15,23 @@
   flex-direction: column;
   align-items: center;
   width: 360px;
-  height: 380px;
+  height: 400px;
   padding: 10px 20px;
   margin-bottom: 20px;
-  background-color: #197755af;
-  border-radius: 10px;
+  background-color: rgba(168, 171, 172, 0.045);
+  border-radius: 30px;
   line-height: 1.4;
   text-align: justify;
-  color: #000f38;
+  transition: transform 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  color: black;
 }
 .card:hover {
-  background-color: #197755fd;
+  transform: scale(1.1);
 }
 
 .card p {
-  color: #000f38;
+  color: #333;
   font-size: 15px;
 }
 .card img {
@@ -41,6 +43,7 @@
 }
 @media screen and (max-width: 796px) {
   .card {
-    height: 430px;
+    height: 450px;
+    margin-bottom: 40px;
   }
 }

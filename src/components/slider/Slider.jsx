@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import './slider.css'
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai'
-import slide1 from '../../assets/tree.jpg'
-import slide2 from '../../assets/raw.jpg'
-import slide3 from '../../assets/nut.jpg'
-import slide4 from '../../assets/product1.png'
+import slide1 from '../../assets/light.jpg'
+import slide2 from '../../assets/code.jpg'
+import slide3 from '../../assets/hardware.jpg'
+import slide4 from '../../assets/pi.jpg'
 import { Link } from 'react-scroll'
 
 const data = [slide1, slide2, slide3, slide4];
@@ -41,14 +41,20 @@ function Slider() {
                             style={{
                                 backgroundImage: `linear-gradient(rgba(8, 0, 58, 0.5), rgba(8, 0, 58, 0.6)), url(${slide})`,
                                 backgroundSize: 'cover',
+                                backgroundPosition: 'center'
+
                             }}
                         ></div>
                     )}
                 </div>
             ))}
             <div className="content">
-                <h1>Welcome to Manglore Farms!</h1>
-                <p>We are dedicated to revolutionizing the cashew industry by offering a seamless integration of cultivation and processing, ensuring top-quality cashew products from farm to table. we're here to support you every step of the way.</p>
+                <h1>Welcome to OmniTech Solutions</h1>
+                <p>We are committed to revolutionising the Technology industry.
+                    We specialise in comprehensive tech solutions, from custom
+                    software development and innovative hardware designs to strategic
+                    consultations tailored to your needs.
+                    Count on us to support you at every turn.</p>
                 <Link to="contact"
                     className='link'
                     spy={true}

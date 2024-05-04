@@ -11,7 +11,8 @@ nav {
   z-index: 10;
 }
 .logo {
-  width: 200px;
+  width: 150px;
+  height: 50px;
   cursor: pointer;
 }
 .navbar {
@@ -29,14 +30,14 @@ nav {
   transition: 0.3s ease-in-out;
 }
 .navbar li:hover {
-  color: rgb(168, 202, 44);
+  color: rgb(244, 160, 42);
 }
 .underline::after,
 .active-link::after {
   content: "";
   width: 0px;
   height: 2px;
-  background: rgb(168, 202, 44);
+  background: rgb(244, 160, 42);
   position: absolute;
   bottom: -4px;
   left: 20px;
@@ -50,8 +51,9 @@ nav {
   display: none;
 }
 .dark-nav {
-  background: #197755;
+  background-color: #fff;
   transition: 0.5s;
+  color: #333;
 }
 @media screen and (max-width: 796px) {
   .navbar {
@@ -60,13 +62,13 @@ nav {
     justify-content: flex-start;
     align-items: flex-start;
     position: fixed;
-    top: 73px;
+    top: 62px;
     right: -200px;
     width: 200px;
     height: 100vh;
-    background: #156548;
+    background: #fff;
     box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
-    color: white;
+    color: black;
     padding: 40px 0 0 10px;
     transition: 0.3s ease-in-out;
   }

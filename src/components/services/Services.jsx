@@ -1,7 +1,7 @@
 import React from 'react'
 import "./services.css"
-import prodIcon from "../../assets/productionicon.png"
-import procIcon from "../../assets/processingicon.png"
+import prodIcon from "../../assets/software.png"
+import procIcon from "../../assets/hardware.png"
 import consIcon from "../../assets/consultationicon.png"
 
 const Services = () => {
@@ -10,38 +10,40 @@ const Services = () => {
             <div className='cards'>
                 <div className='card'>
                     <img src={prodIcon} alt='' />
-                    <h2>Cashew Production</h2>
-                    <p>Beyond raw cashew nuts, We offer value-added products
-                        such as roasted cashews, cashew butter, cashew milk, or other
-                        innovative products. Currently 300ha Cashew Plantations in the
-                        two neighbouring States of Enugu and Abia, Nigeria. We are looking
-                        to quickly scale up to 5,000ha in the next five years. While at this,
-                        we are in the meantime sourcing raw materials from abundant local sources
-                        that offer organically grown albeit wild nuts.</p>
+                    <h2>Software Development</h2>
+                    <p>We excel in custom software development and consulting,
+                        simplifying project birth and execution with cost-efficient
+                        approaches. With expertise in various sectors such as - web
+                        development and UI/UX design, we assure unparalleled success with
+                        seamless technology solutions. Our team ensures successful outcomes
+                        and risk mitigation tailored to your project’s unique requirements.
+                        Partner with us to empower your venture’s growth and competitiveness.
+                    </p>
                 </div>
                 <div className='card'>
                     <img src={procIcon} alt='' />
-                    <h2>Cashew Processing</h2>
-                    <p>we have processing facilities to shell, dry, roast, and package cashew nuts.
-                        Recently commissioned a modern RCN processing factory in Enugu in 2023
-                        equipped with imported machineries for the production of
-                        export-grade cashew kernels for various purposes such as:
-                        Table ready and on-the-go snacks,
-                        Cashew cream and cashew spread production,
-                        Raw Cashew kernels for roasting, flavouring to suit different test buds,
-                        and rebranding for various markets.
+                    <h2>Hardware designs</h2>
+                    <p>We specialise in innovative hardware conceptualisation,
+                        design and final product realisation. Our experienced team
+                        ensures meticulous attention to detail, resulting in high-quality,
+                        cost-effective designs. We focus on designs for performance,
+                        efficiency, usability, and scalability, certifying seamless
+                        integration with the tech ecosystem. From IoT software and hardware
+                        development to cutting-edge technologies, our solutions empower your
+                        vision of not “just concepts” but the realisation and workability of
+                        precision engineering.
+
+
                     </p>
                 </div>
                 <div className='card'>
                     <img src={consIcon} alt='' />
                     <h2>Consultation</h2>
-                    <p>We offer consultation and training services to other farmers
-                        or individuals interested in starting their own cashew farms.
-                        This include advice on land preparation,
-                        planting techniques, crop management, and harvesting methods.
-                        Our experienced team is
-                        dedicated to fostering sustainable agricultural practices and empowering individuals
-                        with the knowledge and skills needed to thrive in the cashew farming industry.
+                    <p>We provide tailored advice, strategic objectives,
+                        and recommendations to maximise the potential of your investments.
+                        We prioritise understanding your ideas, goals and vision, crafting solutions
+                        towards strategic partnerships and technology adoption. We also offer training services
+                        for prospective individuals interested in diverse fields in the tech ecosystem.
                         <br />
 
 

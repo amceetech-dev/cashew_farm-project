@@ -10,7 +10,7 @@ const Contact = () => {
         setResult("Sending....");
         const formData = new FormData(event.target);
 
-        formData.append("access_key", "a3a5da72-5dce-41de-abc7-7a0bd47358b2");
+        formData.append("access_key", "1d817470-5215-4d6d-87ed-beaf19002799");
 
         const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
@@ -33,12 +33,11 @@ const Contact = () => {
                 <h3>Send us a message <img src={msgImg} alt='' /></h3>
                 <p>Feel free to reach out through contact form or find our contact information below.
                     Your feedback, questions, and suggestions are important to us as we strive to provide exceptional product and services
-                    our customers.</p>
+                    to our customers.</p>
                 <ul>
-                    <li><i className="fa-solid fa-envelope"></i>post@manglorefarms.com</li>
-                    <li><i className="fa-solid fa-phone-volume"></i> +234 906 637 5150 </li>
-                    <li><i className="fa-solid fa-location-dot"></i> 4a, Hillview Avenue, Independence Layout
-                        Enugu, Nigeria</li>
+                    <li><i className="fa-solid fa-envelope"></i>info.omnitechsolutionz@gmail.com</li>
+                    <li><i className="fa-solid fa-phone-volume"></i> +234 814 748 1230 | +234 813 825 1413 </li>
+                    <li><i className="fa-solid fa-location-dot"></i> 5, Chukwuemeka Street, Lomalinda Extension, Maryland, Enugu State Nigeria</li>
                 </ul>
             </div>
             <div className='contact-col'>
@@ -47,7 +46,7 @@ const Contact = () => {
                     <input type='text' name='name' placeholder='Enter your name' required />
 
                     <label>Email </label>
-                    <input type='email' name='name' placeholder='Enter your email address' required />
+                    <input type='email' name='email' placeholder='Enter your email address' required />
 
                     <label>Write your message here</label>
                     <textarea name='message' rows="6" placeholder='Enter your message' required></textarea>

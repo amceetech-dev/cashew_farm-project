@@ -7,7 +7,6 @@ import About from './components/about/About'
 import Gallery from './components/gallery/Gallery'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
-import Videoplayer from './components/videoPlayer/Videoplayer'
 import Team from './components/team/Team'
 
 
@@ -29,7 +28,7 @@ const App = () => {
         <hr />
       </div>
 
-      <Title subTitle='Gallery' title='Farm Photos' />
+      <Title subTitle='Project' title='Project Photos' />
       <Gallery />
       <div className='container'>
         <hr />
@@ -38,7 +37,6 @@ const App = () => {
         <Contact />
       </div>
       <Footer />
-      <Videoplayer playState={playState} setPlayState={setPlayState} />
 
     </div>
   )

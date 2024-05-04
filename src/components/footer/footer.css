@@ -1,5 +1,6 @@
 .footer {
-  background-color: #197755;
+  background-color: rgba(168, 171, 172, 0.045);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   padding: 20px 0;
   text-align: center;
   color: #333;
@@ -32,7 +33,7 @@
 }
 .social-media-links li i {
   font-size: 30px;
-  color: #f6f6f6;
+  color: rgb(205, 122, 5);
 }
 
 .social-media-links li a {
@@ -41,7 +42,7 @@
 }
 
 .social-media-links li i:hover {
-  color: rgb(168, 202, 44);
+  color: rgb(244, 160, 42);
 }
 
 /* Style the copyright notice */

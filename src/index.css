@@ -10,7 +10,7 @@ body {
 }
 .btn {
   background: #f5f5f5;
-  color: #197754;
+  color: rgb(244, 160, 42);
   font-size: 16px;
   padding: 14px 25px;
   border-radius: 30px;
@@ -26,17 +26,18 @@ body {
   font-size: 18px;
 }
 .btn:hover {
-  background-color: rgb(168, 202, 44);
+  background-color: rgb(244, 160, 42);
   color: white;
 }
 
 .inside {
-  background: #fff;
-  color: #197754;
+  background: rgb(205, 122, 5);
+
+  color: white;
   font-weight: 600;
 }
 .inside:hover {
-  background: rgb(168, 202, 44);
+  background: rgb(244, 160, 42);
 }
 .container {
   padding-right: 10%;

@@ -9,10 +9,13 @@ import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 
 
 import "./gallery.css"
-import gallery1 from "../../assets/farm1.png"
-import gallery2 from "../../assets/farm2.png"
-import gallery3 from "../../assets/farm3.png"
-import gallery4 from "../../assets/farm4.png"
+import gallery1 from "../../assets/project1.jpg"
+import gallery6 from "../../assets/project8.png"
+import gallery3 from "../../assets/project4.jpg"
+import gallery4 from "../../assets/project5.jpg"
+import gallery2 from "../../assets/project6.jpg"
+import gallery5 from "../../assets/project3.jpg"
+import gallery7 from "../../assets/design.png"
 
 const Gallery = () => {
     return (
@@ -60,15 +63,15 @@ const Gallery = () => {
                 </SwiperSlide>
                 <SwiperSlide>
 
-                    <img src={gallery4} alt='' />
+                    <img src={gallery5} alt='' />
                 </SwiperSlide>
                 <SwiperSlide>
 
-                    <img src={gallery4} alt='' />
+                    <img src={gallery6} alt='' />
                 </SwiperSlide>
                 <SwiperSlide>
 
-                    <img src={gallery4} alt='' />
+                    <img src={gallery7} alt='' />
                 </SwiperSlide>
                 <div className='slider-controler'>
                     <div className='swiper-button-prev slider-arrow'>
